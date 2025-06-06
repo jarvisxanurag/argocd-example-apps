@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: quay.io/argoprojlabs/argocd-e2e-container
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
